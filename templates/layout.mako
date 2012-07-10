@@ -13,15 +13,6 @@
 
 <body>
 
-  % if request.session.peek_flash():
-  <div id="flash">
-    <% flash = request.session.pop_flash() %>
-	% for message in flash:
-	${message}<br>
-	% endfor
-  </div>
-  % endif
-
   <div id="page">
     
     ${next.body()}
