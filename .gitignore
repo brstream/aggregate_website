@@ -1,6 +1,18 @@
+# Compiled source #
+###################
+*.pyc
+
+# Logs and databases #
+######################
 *.db
 *.log
+
+# Temporary files #
+###################
 *.swp
+
+# OS generated files #
+######################
 .DS_Store
 .DS_Store?
 ._*
@@ -9,7 +21,11 @@
 Icon?
 ehthumbs.db
 Thumbs.db
-# Keep passwords and usernames out:
+
+# Keep passwords and usernames out: #
+#####################################
 secret.*
-# A cut and paste file to keep out:
+
+# A cut and paste file to keep out: #
+#####################################
 trash.*
