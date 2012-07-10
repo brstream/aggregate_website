@@ -4,8 +4,8 @@
 <head>
 	
   <meta charset="utf-8">
-  <title>Pyramid Task's List Tutorial</title>
-  <meta name="author" content="Pylons Project">
+  <title>Plum Village Aggregate Site</title>
+  <meta name="author" content="Brother Stream">
   <link rel="shortcut icon" href="/static/favicon.ico">
   <link rel="stylesheet" href="/static/style.css">
 

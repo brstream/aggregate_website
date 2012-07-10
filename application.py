@@ -14,6 +14,8 @@ def main():
     config = Configurator(settings=settings)
     config.scan("views")
     config.scan("subscribers")
+    # routes setup
+    config.add_route('list', '/')
     # serve app
     app = config.make_wsgi_app()
     return app
