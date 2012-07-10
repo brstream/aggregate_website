@@ -9,4 +9,7 @@
 Icon?
 ehthumbs.db
 Thumbs.db
+# Keep passwords and usernames out:
 secret.*
+# A cut and paste file to keep out:
+trash.*
