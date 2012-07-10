@@ -1,10 +1,20 @@
+import os
+
 from wsgiref.simple_server import make_server
 
 from pyramid.config import Configurator
 
+here = os.path.dirname(os.path.abspath(__file__))
+
 def main():
-    config = Configurator()
+    # configuration settings
+    settings = {}
+    settings['db'] = os.path.join(here, 'data.db')
+    # configuration setup
+    config = Configurator(settings=settings)
     config.scan("views")
+    config.scan("subscribers")
+    # serve app
     app = config.make_wsgi_app()
     return app
 
