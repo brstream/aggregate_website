@@ -4,6 +4,8 @@ from pyramid.view import view_config
 
 from layouts import Layouts
 
+import sqlite3
+
 def __init__(self, request):
     self.request = request
 

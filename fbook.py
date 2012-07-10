@@ -19,7 +19,7 @@ def fbook_get(url, selector):
     return results
 
 results = fbook_get(FACEBOOK_PAGE, FACEBOOK_SELECTOR)
-
+import ipdb; ipdb.set_trace()
 for result in results:
     print(result.text)
     print(8 * '-')

@@ -3,6 +3,7 @@ import os
 from wsgiref.simple_server import make_server
 
 from pyramid.config import Configurator
+from pyramid.session import UnencryptedCookieSessionFactoryConfig
 
 here = os.path.dirname(os.path.abspath(__file__))
 
@@ -10,6 +11,9 @@ def main():
     # configuration settings
     settings = {}
     settings['db'] = os.path.join(here, 'data.db')
+    settings['mako.directories'] = os.path.join(here, 'templates')
+    # session factory
+    session_factory = UnencryptedCookieSessionFactoryConfig('itsaseekreet')
     # configuration setup
     config = Configurator(settings=settings)
     config.scan("views")
